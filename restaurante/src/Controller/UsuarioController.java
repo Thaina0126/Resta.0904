@@ -10,10 +10,16 @@ import model.Usuario;
 		private ArrayList <Usuario> usuarios;
 		
 		
-		public String CriarUsuario(String Nome, String CPF, String Email, String Celular, String Senha, String Endereco) {
-    			Usuario usuarioNovo = new Usuario(Nome,CPF,Email,Celular,Senha,Endereco);
+		public String CriarUsuario(String Nome, String CPF, String Email, String Celular, String Senha, String Endereco, String categoria ) {
+    			Usuario usuarioNovo = new Usuario( Nome, CPF, Email, Celular, Senha, Endereco, categoria);
     			usuarios.add(usuarioNovo);
-    			return "Usuario cadastrado com sucesso";
+    			return "Funcionou!";
     		}
+
+
+		public Usuario autenticarUsuario(String cpf, String senha) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 		}
 		
