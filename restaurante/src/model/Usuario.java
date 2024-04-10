@@ -1,5 +1,7 @@
 package model;
 
+import Controller.UsuarioController;
+
 public class Usuario {
 
 	private String Nome, Celular, Email, Senha, CPF,Endereco,categoria;
@@ -18,6 +20,10 @@ public Usuario (String Nome, String Celular,
 		this.categoria = categoria;
 	}
 	
+	public Usuario(UsuarioController usuarioController) {
+	// TODO Auto-generated constructor stub
+}
+
 	void Autenticacao(String Email, String Senha) {
 		if(this.Email == Email
 				&& this.Senha == Senha) {
@@ -47,6 +53,11 @@ public Usuario (String Nome, String Celular,
 	public Object getSenha() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public static void exibir() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

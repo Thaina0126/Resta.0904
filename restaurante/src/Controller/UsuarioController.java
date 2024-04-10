@@ -21,5 +21,11 @@ import model.Usuario;
 			// TODO Auto-generated method stub
 			return null;
 		}
+
+
+		public static boolean login(String email, String senha) {
+			// TODO Auto-generated method stub
+			return false;
+		}
 		}
 		
